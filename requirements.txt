@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+celery
+redis
+python-multipart
+google-generativeai
+pdfminer.six
