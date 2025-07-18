@@ -31,9 +31,9 @@ async def fetch_profile_cv(user_id: str):
         if response.status_code != 200:
             raise HTTPException(502, "Failed to fetch profile")
         data = response.json()
-        if not data.get("cv"):
-            raise HTTPException(400, "No CV found in profile")
-        return data["cv"]["content"]  # Base64 encoded CV
+        if not data.get("resume"):
+            raise HTTPException(400, "No resume found in profile")
+        return data["resume"]["content"]  # Base64 encoded CV
 
 @app.post("/generate-cover-letter")
 async def generate_cover_letter(
