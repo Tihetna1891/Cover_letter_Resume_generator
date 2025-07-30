@@ -5,3 +5,11 @@ redis
 python-multipart
 google-generativeai
 pdfminer.six
+jinja2
+pygments
+pylatex
+httpx
+reportlab
+python-magic
+python-dotenv
+docker

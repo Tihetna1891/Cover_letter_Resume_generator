@@ -21,8 +21,8 @@ load_dotenv()
 #                     backend='redis://localhost:6379/0')
 celery_app = Celery(
     'tasks',
-    broker='redis://192.168.48.1:6379/0',
-    backend='redis://192.168.48.1:6379/0',  # Must match broker URL exactly
+    broker='redis://192.168.0.16:6379/0',
+    backend='redis://192.168.0.16:6379/0',  # Must match broker URL exactly
     include=['tasks']
 )
 celery_app.conf.result_extended = True
