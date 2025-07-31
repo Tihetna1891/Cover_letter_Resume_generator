@@ -13,3 +13,7 @@ reportlab
 python-magic
 python-dotenv
 docker
+pydantic
+python-multipart
+python-dotenv
+python-magic

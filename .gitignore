@@ -2,3 +2,6 @@ venv
 .env
 *.pyc
 _pycache_
+cv_debug
+*.pdf
+*.log
