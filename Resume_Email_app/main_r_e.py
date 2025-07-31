@@ -27,6 +27,11 @@ async def trigger_resume_generation(
     template: str = Form("modern"),
     job_description: str = Form("")
 ):
+    if template not in ["modern", "classic"]:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid template. Choose 'modern' or 'classic'"
+        )
     task = generate_resume.delay(
         user_id=user_id,
         template=template,
