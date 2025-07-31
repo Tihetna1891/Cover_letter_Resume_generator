@@ -15,3 +15,5 @@ python-dotenv
 docker
 pydantic
 python-multipart
+python-dotenv
+python-magic
