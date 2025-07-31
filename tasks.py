@@ -21,6 +21,7 @@ load_dotenv()
 #                     backend='redis://localhost:6379/0')
 celery_app = Celery(
     'tasks',
+<<<<<<< HEAD
     broker='redis://192.168.48.1:6379/0',
     backend='redis://192.168.48.1:6379/0',  # Must match broker URL exactly
     # include=['tasks']
@@ -28,6 +29,11 @@ celery_app = Celery(
     result_backend_transport_options={
         'visibility_timeout': 3600  # Keep results for 1 hour
     }
+=======
+    broker='redis://192.168.0.16:6379/0',
+    backend='redis://192.168.0.16:6379/0',  # Must match broker URL exactly
+    include=['tasks']
+>>>>>>> 2c8e9d5605447dc783bf7bbfc7d2f71df3506185
 )
 celery_app.conf.result_extended = True
 celery_app.conf.broker_connection_retry_on_startup = True
