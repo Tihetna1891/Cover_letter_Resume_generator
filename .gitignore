@@ -5,3 +5,8 @@ _pycache_
 cv_debug
 *.pdf
 *.log
+*.tex
+*.db
+*.html
+*.css
+*.js
