@@ -19,3 +19,10 @@ python-dotenv
 python-magic
 sentry_sdk
 tenacity
+
+
+openai 
+minio 
+boto3 
+numpy
+spacy
